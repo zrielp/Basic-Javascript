@@ -15,3 +15,16 @@ if (konfirmasi) {
 } else {
   alert('Jangan nyesel yaa');
 }
+
+// Kombinasi Popup
+var nama = prompt('Masukkan nama Anda:');
+if (nama) {
+  var konfirmasi = confirm('Bener nama kamu ' + nama + '?');
+  if (konfirmasi) {
+    alert('Selamat datang, ' + nama + '!');
+  } else {
+    alert('Refresh lagi ya, ' + nama + '!');
+  }
+} else {
+  alert('Nama tidak boleh kosong!');
+}
