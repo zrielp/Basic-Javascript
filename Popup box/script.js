@@ -1,6 +1,6 @@
 // Memunculkan popup alert
 alert('jangan dibuka!');
-alert('sumpah jangann!');
+alert('plis jangann!');
 alert('dibilang jangan!');
 
 // Memunculkan popup prompt (terdapat box)
