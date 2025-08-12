@@ -6,7 +6,7 @@
 alert('mulai');
 for (var i = 0; i < 5; i++) {
   //(inisilaisasi; kondisi; increment)
-  alert('ini contoh control flow (Pengulangan) ke-' + i);
+  alert('ini contoh Pengulangan menggunakan for ke-' + i);
 }
 alert('selesai');
 
@@ -14,9 +14,17 @@ alert('selesai');
 // digunakan var supaya angka yg dimasukkan di prompt bisa digunakan karena inputnya akan masuk di dalam "var angka"
 var angka = prompt('Masukkan angka: ');
 if (angka % 2 === 0) {
-  alert('Angka ' + angka + ' adalah bilangan genap');
+  alert(
+    'Angka ' +
+      angka +
+      ' adalah bilangan genap, ini pengulangan menggunakan IF dan ELSE'
+  );
 } else {
-  alert('Angka ' + angka + ' adalah bilangan ganjil');
+  alert(
+    'Angka ' +
+      angka +
+      ' adalah bilangan ganjil, ini pengulangan menggunakan IF dan ELSE'
+  );
 }
 // Artinya jika angka habis dibagi (%) 2, maka akan menghasilkan "sisa bagi === (sama dengan)" 0, maka angka tersebut adalah bilangan genap
 // jika tidak habis dibagi 2, maka akan menghasilkan "sisa bagi !== (tidak sama dengan)" 0, maka angka tersebut adalah bilangan ganjil
@@ -28,8 +36,8 @@ if (angka % 2 === 0) {
 // increment/decrement
 // }
 
-var nilaiAwal = 1;
+var nilaiAwal = 9;
 while (nilaiAwal <= 10) {
-  console.log('Hello World! ' + nilaiAwal);
+  console.log('ini adalah pengulangan while' + nilaiAwal);
   nilaiAwal++;
 }
