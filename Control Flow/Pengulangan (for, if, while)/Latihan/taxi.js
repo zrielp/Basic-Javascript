@@ -14,11 +14,11 @@ var noTaxi = 1;
 
 // latihan 3
 for (noTaxi; noTaxi <= totalTaxi; noTaxi++) {
-  if (noTaxi <= 6) {
+  if (noTaxi <= 6 && noTaxi !== 5) {
     console.log('Taxi No. ' + noTaxi + ' berangkat dengan lancar.');
     // latihan 4
-  } else if (noTaxi === 8) {
-    console.log('Taxi No. ' + noTaxi + ' sedang dalam lembur.');
+  } else if (noTaxi === 8 || noTaxi === 10 || noTaxi === 5) {
+    console.log('Taxi No. ' + noTaxi + ' sedang lembur.');
     //
   } else {
     console.log('Taxi No. ' + noTaxi + ' tidak siap untuk berangkat.');
