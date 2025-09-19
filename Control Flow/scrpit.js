@@ -43,17 +43,32 @@
 // jika tidak habis dibagi 2, maka akan menghasilkan "sisa bagi !== (tidak sama dengan)" 0, maka angka tersebut adalah bilangan ganjil
 
 // SWITCH
-var angka = prompt('Masukkan angka: ');
-switch (angka) {
-  case '1':
-    alert('anda memasukkan angka 1');
+var item = prompt(
+  'Masukkan nama makanan / minuman: \n (cth: ayam, babi, ikan, susu, alkohol, kopi) '
+);
+switch (item) {
+  case 'ayam':
+    alert('anda memilih makanan yang HALAL');
     break;
-  case '2':
-    alert('anda memasukkan angka 2');
+  // fungsi "break" adalah agar setelah menampilkan alert, maka program akan langsung keluar.
+  // jika tidak menggunakan "break", maka program akan dilanjutkan ke case berikutnya
+  case 'babi':
+    alert('anda memilih makanan yang HARAM');
     break;
-  case '3':
-    alert('anda memasukkan angka 3');
+
+  // contoh menghilangkan "break" yang benar
+  case 'susu':
+  case 'ayam':
+  case 'ikan':
+  case 'kopi':
+    // jika codenya seperti ini tanpa break dan alert di setiap case, maka hasilnya akan menampilkan alert pada case terakhir
+    // jadi jika user menginput nama makanan/minuman di atas maka hasilnya akan menampilkan alert pada case terakhir
+    alert('anda memilih minuman yang HALAL');
+    break;
+  case 'alkohol':
+  case 'babi':
+    alert('anda memilih minuman yang HARAM');
     break;
   default:
-    alert('angka yang anda masukkan salah');
+    alert('Makanan / minuman tidak tersedia');
 }
